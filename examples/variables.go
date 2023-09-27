@@ -5,7 +5,7 @@ import "fmt"
 func main() {
     // 문자열 변수 선언 및 초기화
     var greeting string
-    greeting = "안녕하세요, Go 언어!"
+    greeting = "Variable test"
 
     // 정수 변수 선언 및 초기화
     var number1 int
@@ -16,7 +16,7 @@ func main() {
     var isTrue bool = true
 
     // 자료형 추론을 사용하여 변수 선언 및 초기화
-    name := "John"
+    name := "Woo"
     age := 30
 
     // 변수 값 출력
