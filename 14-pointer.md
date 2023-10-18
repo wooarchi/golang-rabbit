@@ -170,7 +170,7 @@ var p2 = new(Data)
 - 예제
 ```
 func TestFunc() {
-	u := &User{} // u 포인터 변수 생성(인스턴스 생성)
+    u := &User{} // u 포인터 변수 생성(인스턴스 생성)
     u.Age = 30
     fmt.Println(u)
 } // 내부 변수가 사라짐 -> 인스턴스도 사라짐.
@@ -184,17 +184,17 @@ func TestFunc() {
 - 예제(함수 외부로 공개되는 인스턴스의 경후 함수가 종료되어도 사라지지 않음)
 ```
 type User struct {
-	Name string
+    Name string
     Age  int
 }
 
 func NewUser(name string, age int) *User {
-	var u = User{name, age}
+    var u = User{name, age}
     return &u // 탈출 분석을 통해 메모리가 사라지지 않는다.
 }
 
 func main() {
-	userPointer := NewUser("Coen", 34)
+    userPointer := NewUser("Coen", 34)
     
     fmt.Println(userPointer)
 }
